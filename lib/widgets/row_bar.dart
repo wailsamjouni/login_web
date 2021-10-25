@@ -24,7 +24,28 @@ class RowBar extends StatelessWidget {
           Row(
             children: <Widget>[
               _widget('Sign in', true),
-              // _widget('', isSelected)
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  padding:
+                      EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
+                  decoration: BoxDecoration(
+                    color: Color(0xffe8c076),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Colors.grey,
+                          spreadRadius: 3.0,
+                          blurRadius: 10.0)
+                    ],
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  child: Text(
+                    'Register',
+                    style:
+                        TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
             ],
           ),
         ],
@@ -81,15 +102,15 @@ Widget _widget(String name, bool isSelected) {
           style: TextStyle(
               fontSize: 20.0,
               fontWeight: FontWeight.bold,
-              color: isSelected ? Colors.black26 : Colors.black87),
+              color: isSelected ? Color(0xff346fed) : Colors.black87),
         ),
         SizedBox(height: 4.0),
         isSelected
             ? Container(
                 height: 5.0,
-                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                padding: EdgeInsets.symmetric(horizontal: 25.0),
                 decoration: BoxDecoration(
-                    color: Colors.black26,
+                    color: Color(0xff346fed),
                     borderRadius: BorderRadius.circular(20.0)),
               )
             : SizedBox(),
