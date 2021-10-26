@@ -25,19 +25,13 @@ class RowBar extends StatelessWidget {
             children: <Widget>[
               _widget('Sign in', true),
               InkWell(
+                hoverColor: Color(0xffffaa00),
                 onTap: () {},
                 child: Container(
                   padding:
                       EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
                   decoration: BoxDecoration(
-                    color: Color(0xffe8c076),
-                    boxShadow: [
-                      BoxShadow(
-                          color: Colors.grey,
-                          spreadRadius: 3.0,
-                          blurRadius: 10.0)
-                    ],
-                    borderRadius: BorderRadius.circular(20.0),
+                    color: Colors.black12,
                   ),
                   child: Text(
                     'Register',

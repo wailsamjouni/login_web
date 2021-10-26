@@ -12,6 +12,7 @@ class BodyPage extends StatelessWidget {
           EdgeInsets.symmetric(horizontal: widthOfScreen / 12, vertical: 20.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
